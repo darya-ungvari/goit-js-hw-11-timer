@@ -1,0 +1,14 @@
+
+
+
+.js-alert {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js-alert.is-visible {
+    visibility: visible;
+    opacity: 1;
+
+   }
+   
