@@ -64,7 +64,4 @@ new CountdownTimer({
   });
 
 
-  new CountdownTimer({
-    selector: '#timer-2',
-    targetDate: new Date('Dec 01, 2020'),
-  });
+ 
