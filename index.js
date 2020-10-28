@@ -6,7 +6,7 @@ const refs = {
     valueHours: document.querySelector('[data-value="hours"]'),
     valueMins: document.querySelector('[data-value="mins"]'),
     valueSecs: document.querySelector('[data-value="secs"]'),
-    };
+};
 
 
 
@@ -22,16 +22,13 @@ class CountdownTimer {
         const currentTime = Date.now();
         const deltaTime = this.targetDate - currentTime;
         const time = this.getTimeComponents(deltaTime);
-        console.log(time);
         this.updateClockface(time)
         this.start()
             
     }
 
     start() {
-        console.log('start');
         setInterval(() => {
-            console.log('here');
             const currentTime = Date.now();
             const deltaTime = this.targetDate - currentTime;
             const time = this.getTimeComponents(deltaTime);
@@ -58,10 +55,7 @@ class CountdownTimer {
             document.querySelector(`${this.selector} [data-value="hours"]`).textContent = hours;
             document.querySelector(`${this.selector} [data-value="mins"]`).textContent = mins;
             document.querySelector(`${this.selector} [data-value="secs"]`).textContent = secs;
-        }
-        
-        
-
+        }      
 }
 
 new CountdownTimer({
